@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<title>With Care, Your Neighbor Project</title>
+</head>
+
+<body style="background-color:MediumSeaGreen;">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1">
+<style>
+p{
+	font-size:20px;
+}
+nav{
+	width: 35px;
+	height: 5px;
+	background-color: darkcyan;
+	margin: 6px 0;
+}
+.accordion {
+	background-color: #eee;
+	color: darkcyan;
+	cursor: pointer;
+	padding: 18px;
+	width 100%
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	transition:0.4s;
+}
+.active, .accordion:hover {
+	background-color: blanchedalmond;
+}
+.panel{
+	padding: 0 18px;
+	display: none;
+	background-color: blanchedalmond;
+	overflow: hidden;
+}
+a:link{
+	background-color: darkcyan;
+	color: blanchedalmond;
+	padding: 15px 25px;
+	text-align: center;
+	display: inline-block;
+	
+}
+a:hover, a:active {
+	background-color: blanchedalmond;
+	color: darkcyan;
+	padding: 15px 25px;
+	text-align:center;
+	display: inline-block;
+}
+</style>
+<button class="accordion">
+<nav></nav>
+<nav></nav>
+<nav></nav>
+</button>
+<div class="panel">
+<p></p>
+<a href="https://portal.311.nyc.gov/article/?kanumber=KA-02501">Homeless Shelters in NYC</a>
+<a href="https://portal.311.nyc.gov/article/?kanumber=KA-01217">Domestic Violence Services</a>
+<a href="https://portal.311.nyc.gov/article/?kanumber=KA-01619">Runaway or Homeless Youth Shelter and Support</a>
+<p></p>
+<a href="https://portal.311.nyc.gov/article/?kanumber=KA-02528">Homeless Drop-In Centers</a>
+<a href="https://www.nyc.gov/site/dycd/services/food_pantries.page">Free Food Pantries</a>
+</div>
+<h1 style="text-align:center; color:white; border:5px dotted blanchedalmond;"><strong>With Care, Your Neighbor Project</strong></h1>
+
+<h2 style="color:white;">How Our Community Can Help</h2>
+<p>Homeless Care Package</p>
+<p> If you are asking yourself: what can I do to help? Here's a few suggestions on helping your neighbors: </p>
+<p> Creating and distributing Care Packages can foster a sense of community.
+Some necessities include: clean socks, toiletries, and nutritious food. Often, large amounts of food does not keep well, especially during the hot summer months.
+Consider donating giftcards of restaurants instead. That way, the person knows they have a next meal planned out.</p> 
+<address>
+</address>
+
+
+
+<p>link 2! </p>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++){
+	acc[i].addEventListener("click", function() {
+this.classList.toggle("active");
+	var panel= this.nextElementSibling;
+	if(panel.style.display === "block") {
+		panel.style.display = "none"; } 
+	else {panel.style.display = "block"; }
+	});
+}
+</script>
+</body>
+</html>

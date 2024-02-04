@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<title>With Care, Your Neighbor Project</title>
+
+</head>
+
+<body style="background-color:MediumSeaGreen;">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1">
+<style>
+p{
+	font-size:20px;
+}
+nav{
+	width: 35px;
+	height: 5px;
+	background-color: darkcyan;
+	margin: 6px 0;
+}
+.accordion {
+	background-color: #eee;
+	color: darkcyan;
+	cursor: pointer;
+	padding: 18px;
+	width 100%
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	transition:0.4s;
+}
+.active, .accordion:hover {
+	background-color: blanchedalmond;
+}
+.panel{
+	padding: 0 18px;
+	display: none;
+	background-color: blanchedalmond;
+	overflow: hidden;
+}
+a:link{
+	background-color: darkcyan;
+	color: blanchedalmond;
+	padding: 15px 25px;
+	text-align: center;
+	display: inline-block;
+	
+}
+a:hover, a:active {
+	background-color: blanchedalmond;
+	color: darkcyan;
+	padding: 15px 25px;
+	text-align:center;
+	display: inline-block;
+}
+</style>
+<button class="accordion">
+<nav></nav>
+<nav></nav>
+<nav></nav>
+</button>
+<div class="panel">
+<p></p>
+<a href="https://portal.311.nyc.gov/article/?kanumber=KA-02501">Homeless Shelters in NYC</a>
+<a href="https://portal.311.nyc.gov/article/?kanumber=KA-01217">Domestic Violence Services</a>
+<a href="https://portal.311.nyc.gov/article/?kanumber=KA-01619">Runaway or Homeless Youth Shelter and Support</a>
+<p></p>
+<a href="https://portal.311.nyc.gov/article/?kanumber=KA-02528">Homeless Drop-In Centers</a>
+<a href="https://www.nyc.gov/site/dycd/services/food_pantries.page">Free Food Pantries</a>
+</div>
+<h1 style="text-align:center; color:white; border:5px dotted blanchedalmond;"><strong>With Care, Your Neighbor Project</strong></h1>
+
+<h2 style="color:white;">Food Insecurity</h2>
+<p>Food insecurity affects many New Yorkers and is a large stressor for more than a million New Yorkers.</p>
+<p>
+According to Feeding America, the nation’s leading hunger-relief organization, <strong>1 in 10 New Yorkers, or 1,882,580 people, struggle with hunger,</strong> and of them 596,060 are children.
+Nearly 1.2 million New Yorkers were food insecure even before the COVID-19 pandemic, with more than 185 million missing meals across the five boroughs, also known as “The Meal Gap.” 
+Additionally, <strong> average meal costs in New York County are estimated to be $6.31, almost twice as high as the national average, $3.25.</strong>
+</p>
+<address>
+New York City Council
+https://council.nyc.gov/data/emergency-food-in-nyc/
+</address>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++){
+	acc[i].addEventListener("click", function() {
+this.classList.toggle("active");
+	var panel= this.nextElementSibling;
+	if(panel.style.display === "block") {
+		panel.style.display = "none"; } 
+	else {panel.style.display = "block"; }
+	});
+}
+</script>
+<a href="https://nycommonpantry.org/food-rescue/"><p>New York Common Pantry</p></a>
+<p>The New York Common Pantry picks up food from restaurants, possibly from overstocking food or to free up space. 
+The good thing about this program is it allows for food not to be wasted by giving extra food to those in need. It's a win-win situation for everyone.</p>
+<a href="https://nycfridge.com/"><p>Map of Community Fridges in NYC</p></a>
+<p>Community Fridges are donated to by people in the community for people in need to eat.<br>The fridges are kept running by local volunteers.</p>
+<img src="NYC Fridge.png" style="float:right;" alt="Locations of Community Fridges" width="454" height="310">
+</body>
+</html>
